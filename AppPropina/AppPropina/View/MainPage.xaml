@@ -76,7 +76,7 @@
 
             <TextCell x:Name="txtTotal"
                       Text="Total"
-                      Detail="{Binding PropinaModel.totalconPropina, Mode=TwoWay}">
+                      Detail="{Binding PropinaModel.TotalconPropina, Mode=TwoWay}">
             </TextCell>
 
             <TextCell x:Name="txtPropina"
