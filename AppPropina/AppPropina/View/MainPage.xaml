@@ -71,12 +71,12 @@
 
             <TextCell x:Name="txtTotalPropina"
                       Text="Total Propina"
-                      Detail="{Binding PropinaModel.ValorPropina, Mode=TwoWay}">
+                      Detail="{Binding PropinaModel.LaPropina, Mode=TwoWay}">
             </TextCell>
 
             <TextCell x:Name="txtTotal"
                       Text="Total"
-                      Detail="{Binding PropinaModel.TotalCuentaMasPropina, Mode=TwoWay}">
+                      Detail="{Binding PropinaModel.totalconPropina, Mode=TwoWay}">
             </TextCell>
 
             <TextCell x:Name="txtPropina"
@@ -86,7 +86,7 @@
 
             <TextCell x:Name="txtPersona"
                       Text="Total por Propina"
-                      Detail="{Binding PropinaModel.TotalPorPersona, Mode=TwoWay}">
+                      Detail="{Binding PropinaModel.TotalporPersona, Mode=TwoWay}">
             </TextCell>
 
         </TableSection>
