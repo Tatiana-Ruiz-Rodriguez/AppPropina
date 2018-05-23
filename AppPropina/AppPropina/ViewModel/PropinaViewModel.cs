@@ -27,16 +27,12 @@ namespace AppPropina.ViewModel
 
         private void Calcular(object obj) {
 
-            PropinaModel.TotalCuenta = decimal.Parse(entTotal.Text);
-            PropinaModel.LaPropina = int.Parse(entPropina.Text);
-            PropinaModel.NumeroPersonas = int.Parse(entPersonas.Text);
+            PropinaModel.LaPropina = (PropinaModel.TotalCuenta * PropinaModel.PorcentajePropina) / 100;
+            PropinaModel.TotalconPropina = PropinaModel.LaPropina + PropinaModel.TotalCuenta;
 
-            var totalPropina = (total * (propina / 100)).ToString();
-
-            txtPropina.Detail = totalPropina.ToString();
-            txtPersona.Detail = (total / personas).ToString();
-            txtTotal.Detail = (total + totalPropina).ToString();
-
+            PropinaModel.PropinaporPersona = PropinaModel.LaPropina / PropinaModel.NumeroPersonas;
+            PropinaModel.TotalporPersona = PropinaModel.PropinaporPersona + (PropinaModel.TotalCuenta / PropinaModel.NumeroPersonas);
+             
         }
 
         #endregion

@@ -8,9 +8,9 @@ namespace AppPropina.Model
     public class Propina: Notificable
     {
 
-        private int numeroPersonas;
+        private double numeroPersonas;
 
-        public int NumeroPersonas
+        public double NumeroPersonas
         {
             get
             {
@@ -29,9 +29,9 @@ namespace AppPropina.Model
         }
 
 
-        private decimal totalCuenta;
+        private double totalCuenta;
 
-        public decimal TotalCuenta
+        public double TotalCuenta
         {
             get
             {
@@ -91,9 +91,9 @@ namespace AppPropina.Model
         }
 
 
-        private int totalconPropina;
+        private double totalconPropina;
 
-        public int TotalconPropina
+        public double TotalconPropina
         {
             get
             {
@@ -112,9 +112,9 @@ namespace AppPropina.Model
         }
 
 
-        private int propinaporPersona;
+        private double propinaporPersona;
 
-        public int PropinaporPersona
+        public double PropinaporPersona
         {
             get
             {
@@ -132,9 +132,9 @@ namespace AppPropina.Model
             }
         }
 
-        private int totalporPersona;
+        private double totalporPersona;
 
-        public int TotalporPersona
+        public double TotalporPersona
         {
             get
             {
