@@ -85,9 +85,9 @@
             </TextCell>
 
             <TextCell x:Name="txtPersona"
-                      Text="Total por Propina"
+                      Text="Total por Persona"
                       Detail="{Binding PropinaModel.TotalporPersona, Mode=TwoWay}">
-            </TextCell>
+            </TextCell> 
 
         </TableSection>
         
